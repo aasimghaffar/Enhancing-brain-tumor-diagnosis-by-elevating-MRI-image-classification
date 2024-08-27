@@ -1,2 +1,83 @@
-# Enhancing-brain-tumor-diagnosis-by-elevating-MRI-image-classification
-Brain tumors are potentially life-threatening diseases that need to be diagnosed as soon as possible to be effectively treated. Enhancing patient results and quality of life requires an accurate and timely classification of brain tumors. This research aims to create an advanced deep-learning model that accurately recognizes brain tumors from MRI images. Through data augmentation and optimization strategies, we improve the Xception architecture's performance by utilizing convolutional neural networks (CNNs) and transfer learning capabilities. The main objective is to develop a strong and trustworthy model that can distinguish between different kinds of brain cancers, such as meningiomas, gliomas, pituitary tumors, and no tumors. We utilize significant data preprocessing and augmentation techniques to improve model generalization using the Brain Tumor MRI Dataset from Kaggle. The dataset consists of 14133 images. We have used several pre-trained CNN models with transfer learning, such as the Xception, ResNet101, and EfficientNetB3 models, to accurately classify the brain tumor MRI images. While all the models performed well on the unseen data and predicted very well on the new data, the exception model outperforms all these and achieves 99% accuracy. This achievement, with remarkable accuracy of 99%, has the potential to improve patient outcomes significantly. The model can efficiently classify brain tumors from MRI images, leading to earlier diagnosis and better patient treatment decisions.
+
+# MRI Brain Tumor Classification using EfficientNet, ResNet101, and Xception
+
+## Overview
+
+This repository contains Jupyter Notebooks that implement MRI brain tumor classification using three state-of-the-art deep learning architectures: EfficientNetB3, ResNet101, and Xception. These models have been trained and evaluated to enhance the accuracy and efficiency of brain tumor diagnosis from MRI images.
+
+## Repository Structure
+
+```
+├── EfficientnetB3 V1-Graph.ipynb  # Jupyter Notebook implementing EfficientNetB3 model
+├── resnet101 V1-Graph.ipynb       # Jupyter Notebook implementing ResNet101 model
+├── Xception V1-Graph.ipynb        # Jupyter Notebook implementing Xception model
+├── README.md                      # Project README file
+```
+
+## Prerequisites
+
+Before running the notebooks, ensure you have the following dependencies installed:
+
+- Python 3.x
+- TensorFlow
+- Keras
+- NumPy
+- Pandas
+- Matplotlib
+- scikit-learn
+- efficientnet
+- Jupyter Notebook
+
+
+## Usage
+
+### Running the Notebooks
+
+1. **Clone the Repository:**
+
+   ```bash
+   https://github.com/aasimghaffar/Enhancing-brain-tumor-diagnosis-by-elevating-MRI-image-classification.git
+   cd Enhancing-brain-tumor-diagnosis-by-elevating-MRI-image-classification
+   ```
+
+2. **Launch Jupyter Notebook:**
+
+   Start Jupyter Notebook in the project directory:
+
+   ```bash
+   jupyter notebook
+   ```
+
+3. **Select a Model Notebook:**
+
+   Open any of the following notebooks to train and evaluate a specific model:
+   
+   - `EfficientnetB3 V1-Graph.ipynb`
+   - `resnet101 V1-Graph.ipynb`
+   - `Xception V1-Graph.ipynb`
+
+4. **Run the Cells:**
+
+   Follow the instructions within each notebook. The notebooks include all necessary steps, from data loading and preprocessing to model training, evaluation, and visualization of results.
+
+### Data Preparation
+
+Ensure that the MRI data is properly organized and available before running the notebooks. The data should be split into training, validation, and testing sets, with appropriate directories for each class (e.g., `tumor` and `no_tumor`). Modify the data paths in the notebooks as needed to point to your dataset location.
+
+### Model Training and Evaluation
+
+Each notebook follows these general steps:
+
+- **Data Loading and Preprocessing:** Load the MRI images, preprocess them (e.g., resizing, normalization), and apply any necessary augmentations.
+- **Model Architecture:** Define the architecture for the chosen model (EfficientNetB3, ResNet101, or Xception).
+- **Training:** Train the model using the training dataset. The training parameters (e.g., epochs, batch size) can be adjusted within the notebook.
+- **Evaluation:** Evaluate the model's performance on the validation and test datasets. Performance metrics such as accuracy, precision, recall, and F1-score are calculated.
+- **Visualization:** Visualize training progress, model predictions, and confusion matrices to better understand model performance.
+
+## Contributing
+
+If you wish to contribute to this project, feel free to fork the repository, make your changes, and submit a pull request. Contributions are welcome, especially improvements in model performance or additional features.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
